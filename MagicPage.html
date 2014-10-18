@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang = "en" style = "height: 1150px;">
+<head>
+<meta charset = "utf-8" />
+</script>
+
+<title> Customers
+</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
+
+<script> 
+$(document).ready(function(){
+    var text=$("#text");
+	var head=$("#header");
+	var truck=$("#truck");
+	var text5=$("#text5");
+	var bar1=$("#accentbar1");
+	var bar2=$("#accentbar2");
+	var bar3=$("#accentbar3");
+	var text2=$("#text2");
+	var text3=$("#text3");
+	var text4 =$("#text4");
+	var text5 =$("#text5");
+	
+	
+    text.animate({left:'0px'},"slow");
+	text.animate({top:'0px'},"slow");
+    text3.animate({top:'0px'},"slow");
+	text3.animate({left: '0px'},"slow");
+	text4.animate({left: '0px'}, "slow");
+	text4.animate({top: '0px'}, "slow");
+	text5.animate({top: '0px'}, "slow");
+	text5.animate({left: '0px'}, "slow");
+	
+	bar1.animate({top:'550px'},"slow");
+	bar2.animate({left:'0px'},"slow");
+	bar3.animate({left:'25%'},"slow");
+	bar3.animate({top:'330px'},"slow");
+	
+	text2.animate({top:'0px'},"slow");
+	text2.animate({left:'0px'},"slow");
+
+	truck.animate({left:'0px'},"slow");
+	truck.animate({top:'0px'},"slow");
+	
+	head.animate({left:'0px'},"slow");
+	head.animate({top:'0px'},"slow");
+	
+	
+	setTimeout(function(){
+	var body1= document.getElementById("body");
+	body1.style.overflow="visible";}, 1000);
+	
+});
+</script> 
+<!--external style sheet-->
+<link rel="stylesheet" type="text/css" href="WTSstyle.css">
+
+
+<style type = "text/css">
+div.text{ 
+box-shadow: 10px 10px 5px #333333;
+background-color: red;
+color:white;
+font-size: 1.1em;
+font-family: 'Esteban', serif;
+position: relative;
+width: 840px;
+left: 1500px;
+top:100px;
+padding: 30px;
+border-radius:10px;
+z-index: 2;
+margin-top: 25px;
+}
+
+img.truck{
+margin-top: 25px;
+box-shadow: 10px 10px 5px #333333;
+position: relative;
+left: -400px;
+top: 300px;
+height: 267px;
+border-radius:10px;
+}
+
+div.accentbar1{
+background-color: darkblue; 
+opacity:0.7; 
+width: 140px; 
+height: 450px; 
+position: absolute;
+top: -600px; 
+left : 65%;
+z-index: -3;
+}
+
+div.accentbar2{
+background-color: red; 
+width: 600px; 
+height: 100px; 
+position: absolute;
+z-index: -2;
+margin-top: 80px;
+left:-800px;
+}
+
+div.accentbar3{
+background-color: red;  
+width: 600px; 
+height: 100px; 
+position: absolute;
+z-index: -2;
+margin-top: 80px;
+left:-800px;
+top:450px;
+
+}
+
+div.text5{
+font-size: 1.1em;
+width: 260px; 
+background-color: DarkBlue; 
+color: white; 
+padding: 20px; 
+position: relative;
+top:800px;
+left: 650px;
+font-family: 'Esteban', serif;
+box-shadow: 10px 10px 5px #333333;
+border-radius:10px;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+div.text3{
+margin-top: 25px;
+font-size: 1.1em;
+background-color: darkblue;
+color: white;
+border-radius:10px;
+box-shadow: 10px 10px 5px #333333;
+width: 300px;
+padding: 30px; 
+font-family: 'Esteban', serif;
+left: 300px;
+top:-300px;
+position: relative;
+float: right;
+z-index: 1;
+height: 207px;
+}
+
+div.text4{
+position: relative;
+font-size: 1.1em;
+background-color: red;
+color: white;
+border-radius:10px;
+box-shadow: 10px 10px 5px #333333;
+width: 500px;
+padding: 20px; 
+font-family: 'Esteban', serif;
+float: right;
+top: 200px;
+left: -900px;
+margin-top: 75px;
+margin-left:25px;
+}
+
+div.text2{
+font-size: 1.1em;
+box-shadow: 10px 10px 5px #333333;
+background-color: darkblue;
+color: white;
+padding: 20px;
+float: right;
+left: 400px;
+top: -400px;
+position: relative;
+border-radius:10px;
+z-index: 2;
+width: 500px;
+font-family: 'Esteban', serif;
+margin-top: 25px;
+}
+
+div.header{
+box-shadow: 10px 10px 5px #333333;
+background-color: darkblue;
+color:white;
+font-size: 1.1em;
+font-family: 'Esteban', serif;
+position: relative;
+width: 840px;
+left: 1500px;
+top: -200px;
+padding: 30px;
+border-radius:10px;
+z-index: 2;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 25px;
+font-size: 1.7em;
+}
+
+
+</style>
+</head>
+
+<!-- starts the body of the page -->
+<body id = "body">
+
+<!-- top banner -->
+<div class = "banner" id = "banner">
+
+<!-- contact info -->
+<span class = "contact">
+WTS Transportation Services, LLC <br>
+P.O. Box 955, Tallmadge, OH  44278 <br>
+Phone:  1-888-798-1300  <br>  (330)-633-8200 <br>
+Fax (330)633-7314
+</span>
+</div>
+
+<div class = "space" id = "spacer">
+</div>
+
+<!-- menu on top of page -->
+<div class = "menubar">
+<div class = "menuWrapper">
+<table>
+<tr>
+<td>
+<a class = "menu" id = "home" href = "javascript:test('home')" >
+<b> Home </b>
+</a>
+</td>
+<td>
+<a class = "menu" id = "truckload" href = "javascript:test('customer')" onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">
+<b> Customers </b>
+<!--
+</a>
+		<div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="javascript:test('customer')">Why Use WTS?</a>
+        <a href="#">Services</a>
+		</div>
+-->
+</td>
+<td>
+<a class = "menu" href = "javascript:test('carrier')">
+<b> Carriers </b>
+</a>
+</td>
+<td>
+<a class = "menu" href = "javascript:test('services')">
+<b> Services </b>
+</a>
+</td>
+<td>
+<a class = "menu" href = "javascript:test('contact')">
+<b> Contact Us </b>
+</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+<!-- Social Media -->
+<div class = "social">
+<a href="https://www.facebook.com/WTSTransportation">
+<img class = "social" src="images/FB-f-Logo__blue_29.png" alt="WTS Facebook"></a>
+
+<a href="http://www.linkedin.com/company/3209854">
+<img class = "social" src="images/InBug.png" alt="WTS LinkedIn" ></a>
+</div>
+
+<!--Two accent bars -->
+<div class = "accentbar1" id = "accentbar1">
+</div>
+<div class = "accentbar3" id = "accentbar3">
+</div>
+
+
+
+
+<div class = "backshade" style = "padding-bottom: 0px; height: 1027px">
+<div class = "main">
+<div class = "header" id = "header">
+<b>
+WHY USE WTS?
+</b>
+</div>
+<!-- truck img -->
+<img class = "truck" id = "truck" src = "images/handshake.jpg" style = "margin-top: 0px;"/>
+
+<!-- screen text -->
+
+<div class = "text3" id = "text3" style = "width: 375px; text-align: center; margin-top: 0px;">
+<i>"I have enjoyed working with WTS Transportation over the years. They make moving freight
+ very easy, stress free and reasonable. They are great in keeping me in the loop on my shipments 
+ in transit and let me know when all has been delivered."</i>
+ <br/>
+ <br/>
+ <br/>
+ Jennifer - Paper Industry
+</div>
+
+<div class = "text" id = "text" >
+Why should you use WTS Transportation Services? 
+We allow you to focus on other aspects of your job while our dedicated staff handles all the transportation arrangements. 
+At WTS Transportation Services, our staff of experienced transportation professionals, high quality motor carriers, and proprietary technology has allowed us to successfully build and expand our business of moving freight throughout the United States and Canada since 1984.
+</div>
+
+<div class = "text4" id = "text4">
+Our customers rely on WTS Transportation Services for a superior and stress free transportation experience. 
+Join our satisfied clients with the peace of mind that comes with years of experience in selecting suitable transportation for your goods.
+</div>
+
+<div class = "text2" id = "text2">
+During these trying times of increasing capacity shortages, WTS Transportation Services has access to the trucks you need, when you need them, at a price that you can afford.
+</div>
+
+<div class = "text5" id = "text5" >
+WTS has pre-approved qualified carriers at our disposal to seamlessly meet your specific requirements. 
+The highly trained staff at WTS Transportation monitors the performance of the motor carriers selected to transport your goods. This ensures reliable, on-time and cost effective transportation.
+This attention to detail affords our operations department the opportunity to ensure your load is delivered as promised.
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+</body>
+</html>
