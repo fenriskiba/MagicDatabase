@@ -1,13 +1,3 @@
-<?php
-$connection=mysqli_connect("localhost","gic1","databaseclass","DatabaseManagement");
-
-$result = mysqli_query($connection, "SELECT * FROM MagicCards
-                                        WHERE CardName='Elvish Visionary'");
-$cardDetails=mysqli_fetch_array($result);
-
-mysqli_close($connection);
-?>
-
 <html lang = "en">
 <head>
 <meta charset = "utf-8" />
