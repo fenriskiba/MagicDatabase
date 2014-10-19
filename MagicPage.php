@@ -4,15 +4,13 @@
 <meta charset = "utf-8" />
 </script>
 
-<title> MAGIC THE GATHERING Card Searcher
+<title> MAGIC THE GATHERING Card Search
 </title>
 
 <!--external style sheet-->
 <link rel="stylesheet" type="text/css" href="WTSstyle.css">
 
-
 <style type = "text/css">
-
 div.banner{
 
 height:135px;
