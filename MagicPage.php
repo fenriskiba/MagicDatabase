@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+$connection=mysqli_connect("localhost","gic1","databaseclass","DatabaseManagement");
+
+$result = mysqli_query($connection, "SELECT * FROM MagicCards
+                                        WHERE CardName='Elvish Visionary'");
+$cardDetails=mysqli_fetch_array($result);
+
+mysqli_close($connection);
+?>
+
 <html lang = "en">
 <head>
 <meta charset = "utf-8" />
@@ -114,19 +123,19 @@ Result
 </h1>
 <div class = "searchbox" >
 <div class = "result" >
-    Card Name:
+    Card Name: <?php echo $cardDetails["CardName"]; ?>
     <br>
-    Mana Cost: 
+    Mana Cost: <?php echo $cardDetails["ManaCost"]; ?>
     <br>
-    Types: 
+    Types: <?php echo $cardDetails["Types"]; ?>
     <br>
-    Card Text: 
+    Card Text: <?php echo $cardDetails["CardText"]; ?>
     <br>
-    Power: 
+    Power: <?php echo $cardDetails["CreaturePower"]; ?>
     <br>
-    Toughness: 
+    Toughness: <?php echo $cardDetails["CreatureToughness"]; ?>
     <br>
-    Loyalty: 
+    Loyalty: <?php echo $cardDetails["PlaneswalkerLoyalty"]; ?>
     <form>
     <input type="submit" value="Edit">
     <input type="submit" value="Delete">
