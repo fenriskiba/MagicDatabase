@@ -136,9 +136,18 @@ Result
     Toughness: <?php echo $cardDetails["CreatureToughness"]; ?>
     <br>
     Loyalty: <?php echo $cardDetails["PlaneswalkerLoyalty"]; ?>
-    <form>
-    <input type="submit" value="Edit">
-    <input type="submit" value="Delete">
+    <form action="EditOrDeleteProcessing.php" method="post">
+    <div hidden>
+        <input type="text" name="cardname" <?php echo "value=\"".$cardDetails["CardName"]."\""; ?>>
+        <input type="text" name="manacost" <?php echo "value=\"".$cardDetails["ManaCost"]."\""; ?>>
+        <input type="text" name="types" <?php echo "value=\"".$cardDetails["Types"]."\""; ?>>
+        <input type="text" name="cardtext" <?php echo "value=\"".$cardDetails["CardText"]."\""; ?>>
+        <input type="text" name="power" <?php echo "value=\"".$cardDetails["CreaturePower"]."\""; ?>>
+        <input type="text" name="toughness" <?php echo "value=\"".$cardDetails["CreatureToughness"]."\""; ?>>
+        <input type="text" name="loyalty" <?php echo "value=\"".$cardDetails["PlaneswalkerLoyalty"]."\""; ?>>
+    </div>
+    <input type="submit" value="Edit" name="Edit">
+    <input type="submit" value="Delete" name="Delete">
     </form>
     
 </div>

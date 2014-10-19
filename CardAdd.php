@@ -90,8 +90,3 @@ margin-right: auto;
 
 </body>
 </html>
-
-<?php
-sleep(10);
-header('Location: MagicPage.php');
-?>
