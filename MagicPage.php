@@ -118,6 +118,7 @@ margin-right: auto;
 </form>
 </div>
 <br>
+<div <?php if(empty($_GET)){ echo "hidden";} ?>>
 <h1 class = "search">
 Result
 </h1>
@@ -150,6 +151,7 @@ Result
     <input type="submit" value="Delete" name="Delete">
     </form>
     
+</div>
 </div>
 </div>
 
