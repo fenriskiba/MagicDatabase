@@ -89,7 +89,7 @@ margin-right: auto;
     Edit Card
 </h1>
 <div class = "searchbox" >
-<form class = "entry" >
+<form class = "entry" action="EditCardDatabase.php" method="post">
     Card Name: <div><input type="text" name="cardname" <?php echo "value=\"".$_GET["cardname"]."\""; ?>></div>
     <br>
     Mana Cost: <div><input type="text" name="manacost" <?php echo "value=\"".$_GET["manacost"]."\""; ?>></div>
@@ -104,6 +104,15 @@ margin-right: auto;
     <br>
     Loyalty: <div><input type="text" name="loyalty" <?php echo "value=\"".$_GET["loyalty"]."\""; ?>></div>
     <br>
+    <div hidden>
+        <input type="text" name="originalcardname" <?php echo "value=\"".$_GET["cardname"]."\""; ?>>
+        <input type="text" name="originalmanacost" <?php echo "value=\"".$_GET["manacost"]."\""; ?>>
+        <input type="text" name="originaltypes" <?php echo "value=\"".$_GET["types"]."\""; ?>>
+        <input type="text" name="originalcardtext" <?php echo "value=\"".$_GET["cardtext"]."\""; ?>>
+        <input type="text" name="originalpower" <?php echo "value=\"".$_GET["power"]."\""; ?>>
+        <input type="text" name="originaltoughness" <?php echo "value=\"".$_GET["toughness"]."\""; ?>>
+        <input type="text" name="originalloyalty" <?php echo "value=\"".$_GET["loyalty"]."\""; ?>>
+    </div>
     <input type="submit" value="Save">
 </form>
 </div>
