@@ -13,6 +13,18 @@ if ($_POST['Search'])
 }
 else if ($_POST['Add'])
 {
+    $connection=mysqli_connect("localhost","gic1","databaseclass","DatabaseManagement");
+
+    $result = mysqli_query($connection, "INSERT INTO MagicCards
+                                         VALUES ('".$_POST['cardname']."',
+                                                 '".$_POST['manacost']."',
+                                                 '".$_POST['types']."',
+                                                 '".$_POST['cardtext']."',
+                                                 ".$_POST['power'].",
+                                                 ".$_POST['toughness'].",
+                                                 ".$_POST['loyalty'].");");
+    mysqli_close($connection);
+
     header('Location: CardAdd.php');
 }
 ?>

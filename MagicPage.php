@@ -123,7 +123,7 @@ Result
 </h1>
 <div class = "searchbox" >
 <div class = "result" >
-    Card Name: php echo $cardDetails["CardName"];
+    Card Name: <?php echo $cardDetails["CardName"]; ?>
     <br>
     Mana Cost: <?php echo $cardDetails["ManaCost"]; ?>
     <br>
