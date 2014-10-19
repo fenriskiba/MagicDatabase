@@ -2,7 +2,13 @@
 $connection=mysqli_connect("localhost","gic1","databaseclass","DatabaseManagement");
 
 $result = mysqli_query($connection, "SELECT * FROM MagicCards
-                                        WHERE CardName='Elvish Visionary'");
+                                        WHERE CardName LIKE '".$_GET["cardname"]."%'
+                                          AND ManaCost='".$_GET["manacost"]."'
+                                          AND Types LIKE '%".$_GET["types"]."%'
+                                          AND CardText LIKE '%".$_GET["cardtext"]."%'
+                                          AND CreaturePower>=".$_GET["power"]."
+                                          AND CreatureToughness>=".$_GET["toughness"]."
+                                          AND PlaneswalkerLoyalty=".$_GET["loyalty"]);
 $cardDetails=mysqli_fetch_array($result);
 
 mysqli_close($connection);
@@ -107,9 +113,9 @@ margin-right: auto;
     <br>
     Card Text: <div><input type="text" name="cardtext"></div>
     <br>
-    Power: <div><input type="text" name="power"></div>
+    Power (>=): <div><input type="text" name="power"></div>
     <br>
-    Toughness: <div><input type="text" name="toughness"></div>
+    Toughness (>=): <div><input type="text" name="toughness"></div>
     <br>
     Loyalty: <div><input type="text" name="loyalty"></div>
     <br>
@@ -118,7 +124,7 @@ margin-right: auto;
 </form>
 </div>
 <br>
-<div <?php if(empty($_GET)){ echo "hidden";} ?>>
+<div <?php if(empty($_GET)){ echo "hidden"; } ?>>
 <h1 class = "search">
 Result
 </h1>
