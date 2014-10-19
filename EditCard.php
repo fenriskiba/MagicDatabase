@@ -90,22 +90,21 @@ margin-right: auto;
 </h1>
 <div class = "searchbox" >
 <form class = "entry" >
-    Card Name: <div><input type="text" name="cardname"></div>
+    Card Name: <div><input type="text" name="cardname" <?php echo "value=\"".$_GET["cardname"]."\""; ?>></div>
     <br>
-    Mana Cost: <div><input type="text" name="manacost"></div>
+    Mana Cost: <div><input type="text" name="manacost" <?php echo "value=\"".$_GET["manacost"]."\""; ?>></div>
     <br>
-    Types: <div><input type="text" name="types"></div>
+    Types: <div><input type="text" name="types" <?php echo "value=\"".$_GET["types"]."\""; ?>></div>
     <br>
-    Card Text: <div><input type="text" name="cardtext"></div>
+    Card Text: <div><input type="text" name="cardtext" <?php echo "value=\"".$_GET["cardtext"]."\""; ?>></div>
     <br>
-    Power: <div><input type="text" name="power"></div>
+    Power: <div><input type="text" name="power" <?php echo "value=\"".$_GET["power"]."\""; ?>></div>
     <br>
-    Toughness: <div><input type="text" name="toughness"></div>
+    Toughness: <div><input type="text" name="toughness" <?php echo "value=\"".$_GET["toughness"]."\""; ?>></div>
     <br>
-    Loyalty: <div><input type="text" name="loyalty"></div>
+    Loyalty: <div><input type="text" name="loyalty" <?php echo "value=\"".$_GET["loyalty"]."\""; ?>></div>
     <br>
-    <input type="submit" value="Search">
-    <input type="submit" value="Add">
+    <input type="submit" value="Save">
 </form>
 </div>
 
