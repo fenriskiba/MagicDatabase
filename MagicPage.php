@@ -85,7 +85,7 @@ div.result{
 padding-top:15px;
 padding-bottom:20px;
 width:500px;
-background-color: yellow;
+background-color: white;
 margin-left: auto;
 margin-right: auto;
 }
